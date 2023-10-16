@@ -1,0 +1,81 @@
+/* -================= root =================- */
+:root {
+  --item-1: chocolate;
+  --item-2: darkmagenta;
+  --item-3: orange;
+  --item-4: gray;
+  --item-5: green;
+}
+
+/* -================= body =================- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+.w {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 400px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid black;
+}
+.title {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* -================= Slider =================- */
+.slider {
+  display: flex;
+  margin-bottom: 30px;
+}
+.slide {
+  min-width: 400px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-1 {
+  background-color: var(--item-1);
+}
+.item-2 {
+  background-color: var(--item-2);
+}
+.item-3 {
+  background-color: var(--item-3);
+}
+.item-4 {
+  background-color: var(--item-4);
+}
+.item-5 {
+  background-color: var(--item-5);
+}
+
+.hide {
+  display: none;
+}
+
+/* -================= Arrows =================- */
+.slider-button {
+  min-width: 10rem;
+  border: 0;
+  padding: 15px;
+  color: #fff;
+  background-color: #3066be;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.slider-button:hover {
+  background-color: rgba(48, 102, 190, 0.8);
+}
